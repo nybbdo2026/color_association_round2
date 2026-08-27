@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #fafafa;
+  color: #1a1a1a;
+}
+
+#jspsych-target {
+  width: 100%;
+  max-width: 900px;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.attribute-word {
+  width: fit-content;
+  max-width: 100%;
+  margin: 24px auto;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: #fff;
+  border: 2px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 20px 36px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.too-fast-warning {
+  font-size: 1.1rem;
+  color: #c1121f;
+  font-weight: 600;
+  margin: 24px 0;
+}
+
+.jspsych-btn {
+  font-size: 1.1rem;
+  padding: 14px 22px;
+  min-height: 48px;
+  min-width: 120px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.fits-btn {
+  background: #d3f9d8;
+  border-color: #8fd19e;
+}
+
+.does-not-fit-btn {
+  background: #d0ebff;
+  border-color: #74c0fc;
+}
+
+.palette-preview {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 24px 0;
+}
+
+.palette-preview-img {
+  width: 420px;
+  max-width: min(46vw, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.trial-palette-img {
+  width: 480px;
+  max-width: min(85vw, 100%);
+  height: auto;
+  display: block;
+  margin: 0 auto 16px;
+  border-radius: 10px;
+  border: 2px solid #dcdcdc;
+}
+
+@media (max-width: 480px) {
+  .jspsych-btn {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  .attribute-word {
+    font-size: 1.75rem;
+    padding: 14px 18px;
+  }
+
+  .trial-palette-img {
+    width: 100%;
+  }
+}
